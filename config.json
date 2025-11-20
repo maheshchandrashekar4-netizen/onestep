@@ -3,37 +3,34 @@
   "type": "REST",
   "lang": {
     "en-US": {
-      "name": "OneStep Test Activity2",
-      "description": "Simple Custom Activity Test"
+      "name": "OneStep Activity",
+      "description": "A simple test activity."
     }
+  },
+  "metaData": {
+    "icon": "images/icon.png",
+    "category": "message"
   },
   "arguments": {
     "execute": {
-      "inArguments": [],
-      "outArguments": [],
-      "url": "https://SimpleDIY.onrender.com/execute",
+      "url": "https://onestep-2.onrender.com/execute",
       "verb": "POST",
       "body": "",
-      "format": "json",
-      "useJwt": false
+      "headers": {}
+    },
+    "save": {
+      "url": "https://onestep-2.onrender.com/save",
+      "verb": "POST"
+    },
+    "validate": {
+      "url": "https://onestep-2.onrender.com/validate",
+      "verb": "POST"
     }
   },
   "configurationArguments": {
     "publish": {
-      "url": "https://SimpleDIY.onrender.com/publish"
-    },
-    "validate": {
-      "url": "https://SimpleDIY.onrender.com/validate"
-    },
-    "stop": {
-      "url": "https://SimpleDIY.onrender.com/stop"
+      "url": "https://onestep-2.onrender.com/save",
+      "verb": "POST"
     }
-  },
-  "userInterfaces": {
-    "configTab": {
-      "url": "https://onestep-g40l.onrender.com/ui.html"
-    }
-  },
-  "schema": {},
-  "category": "custom"
+  }
 }
