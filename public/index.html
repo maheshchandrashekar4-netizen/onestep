@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OneStep Activity</title>
+  <script src="https://apps.staticcontents.com/exacttarget/sdk/js/activity.js"></script>
+</head>
+
+<body>
+  <h2>OneStep Custom Activity</h2>
+  <p>Your activity UI is loading correctly.</p>
+
+  <script>
+    // Required Journey Builder initialization
+    window.onload = function() {
+      jb.ready(() => {
+        jb.setActivityData({ foo: "bar" });
+      });
+    };
+  </script>
+</body>
+</html>
