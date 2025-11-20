@@ -1,0 +1,39 @@
+{
+  "workflowApiVersion": "1.1",
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "OneStep Test Activity",
+      "description": "Simple Custom Activity Test"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://SimpleDIY.onrender.com/execute",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false
+    }
+  },
+  "configurationArguments": {
+    "publish": {
+      "url": "https://SimpleDIY.onrender.com/publish"
+    },
+    "validate": {
+      "url": "https://SimpleDIY.onrender.com/validate"
+    },
+    "stop": {
+      "url": "https://SimpleDIY.onrender.com/stop"
+    }
+  },
+  "userInterfaces": {
+    "configTab": {
+      "url": "https://SimpleDIY.onrender.com/ui.html"
+    }
+  },
+  "schema": {},
+  "category": "custom"
+}
